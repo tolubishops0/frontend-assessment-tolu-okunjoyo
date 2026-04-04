@@ -22,13 +22,13 @@ export function ProductGrid({
       <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.24em] text-[var(--muted)]">
-            Mock Listing
+            Product Listing
           </p>
           <h2
             id="products-heading"
             className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-[var(--foreground)]"
           >
-            Responsive product cards with strong visual hierarchy
+            Find exactly what you need{" "}
           </h2>
         </div>
 

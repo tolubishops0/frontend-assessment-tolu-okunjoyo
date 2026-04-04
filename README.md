@@ -49,3 +49,10 @@ This let me focus on engineering quality, UI polish, and state handling rather t
   - title
   - description
   - Open Graph image
+
+### Loading, Error, and Empty States
+
+- Route-level loading UI with skeleton layouts
+- Route-level error boundary with retry and back-to-listing actions
+- Dedicated empty state for no search/filter matches
+- Suspense-streamed related products section on the detail page with a meaningful skeleton fallback
