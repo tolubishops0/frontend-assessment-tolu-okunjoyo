@@ -1,11 +1,10 @@
 import type { DummyJsonProduct } from "@/types/dummyjson";
 import type { Product } from "@/types/product";
 
-export const PRODUCTS_PAGE_SIZE = 50;
+export const PRODUCTS_PAGE_SIZE = 9;
 
 export function formatCategoryLabel(value: string) {
   if (!value) return "";
-  console.log({ value }, "from label ");
   return value
     .split("-")
     .map((segment) => segment.charAt(0).toUpperCase() + segment.slice(1))

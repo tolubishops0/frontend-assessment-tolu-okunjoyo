@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Checkit Content Explorer
 
-## Getting Started
+A content explorer built for the Checkit Frontend Engineer take-home assessment using Next.js App Router, TypeScript, Tailwind CSS, and the live DummyJSON products API.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Repository: `https://github.com/tolubishops0/xyx`
+- Live URL: `xyz.com`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why DummyJSON
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I chose [DummyJSON Products](https://dummyjson.com/docs/products) because it offers:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- a stable free API with no authentication setup
+- built-in product listing and single-product detail endpoints
+- search support
+- category support
+- image-rich product data that maps naturally to the assessment requirements
 
-## Learn More
+This let me focus on engineering quality, UI polish, and state handling rather than spending time on API auth or incomplete data.
 
-To learn more about Next.js, take a look at the following resources:
+## Features Implemented
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Listing Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- App Router listing route at `/products`
+- Root route `/` redirects to `/products`
+- Server-rendered listing page using live DummyJSON data
+- Responsive card grid:
+  - mobile: 1 column
+  - tablet: 2 columns
+  - desktop: 3 columns
+  - large desktop: 4 columns
+- Pagination with compact ellipsis-based navigation
+- Product cards with:
+  - title
+  - image with fallback
+  - brand
+  - price
+  - rating
+  - stock
 
-## Deploy on Vercel
+### Detail Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Dynamic route at `/products/[id]`
+- Server-side product fetch
+- Breadcrumb back to the listing
+- Dynamic metadata via `generateMetadata`
+  - title
+  - description
+  - Open Graph image

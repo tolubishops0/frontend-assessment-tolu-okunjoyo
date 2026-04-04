@@ -2,18 +2,16 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import { toast } from "sonner";
 
 type ProductsErrorProps = {
   error: Error & { digest?: string };
   reset: () => void;
 };
 
-export default function ProductsError({
-  error,
-  reset,
-}: ProductsErrorProps) {
+export default function ProductsError({ error, reset }: ProductsErrorProps) {
   useEffect(() => {
-    console.error(error);
+    toast.error(error.message);
   }, [error]);
 
   return (

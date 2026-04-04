@@ -2,9 +2,6 @@ import { EmptyState } from "@/components/products/empty-state";
 import { Pagination } from "@/components/products/pagination";
 import { ProductFilters } from "@/components/products/product-filters";
 import { ProductGrid } from "@/components/products/product-grid";
-// import { Pagination } from "@/components/products/pagination";
-// import { ProductFilters } from "@/components/products/product-filters";
-// import { ProductGrid } from "@/components/products/product-grid";
 import { getProductCategories, getProductListing } from "@/lib/api/products";
 
 type ProductsPageProps = {
