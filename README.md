@@ -330,7 +330,7 @@ Lighthouse reports a contrast issue on a few low-emphasis text elements, specifi
 
 ### B-2 Suspense Streaming
 
-The product detail route streams a secondary related-products section with `Suspense`, so the main product content can render first while the category-based recommendations load behind a dedicated skeleton fallback. No client-side loading state is involved — the stream is handled entirely at the server level by the App Router.
+The product detail route streams a secondary related-products section with `Suspense`, so the main product content can render first while the category-based recommendations load behind a dedicated skeleton fallback. No client-side loading state is involved the stream is handled entirely at the server level by the App Router.
 
 ### B-3 Accessibility Audit
 
