@@ -105,7 +105,7 @@ export async function getRelatedProducts(category: string, excludeId: number) {
 
   return response.products
     .filter((product) => product.id !== excludeId)
-    .slice(0, 3)
+    .slice(0, 4)
     .map(mapDummyJsonProduct);
 }
 
