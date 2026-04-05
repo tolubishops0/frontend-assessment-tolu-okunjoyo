@@ -31,7 +31,7 @@ export default async function ProductsPage({
         <div className="relative space-y-8">
           <header className="grid gap-8 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.9fr)] lg:items-end">
             <div className="space-y-4">
-              <span className="inline-flex items-center rounded-full border border-[var(--border-strong)] bg-[rgba(148,69,33,0.1)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--accent)]">
+              <span className="inline-flex items-center rounded-full border border-[var(--border-strong)] bg-[var(--surface-raised)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--accent)]">
                 Curated Product Explorer
               </span>
               <div className="space-y-3">
