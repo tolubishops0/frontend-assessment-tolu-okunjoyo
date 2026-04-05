@@ -97,19 +97,6 @@ export function ProductDetail({ product, children }: ProductDetailProps) {
                 ))}
               </ul>
             </div>
-
-            {/* <div className="grid gap-4 rounded-[1.5rem] border border-[var(--border)] bg-[var(--surface-raised)] p-5 sm:grid-cols-2">
-              <InfoBlock
-                label="Availability"
-                value={product.availabilityStatus ?? "Unknown"}
-                hint="Updated from the current catalog record."
-              />
-              <InfoBlock
-                label="Category"
-                value={product.category}
-                hint="Consistent with the categories shown in the main catalog."
-              />
-            </div> */}
           </div>
         </div>
       </section>

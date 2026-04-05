@@ -1,7 +1,7 @@
 import type { DummyJsonProduct } from "@/types/dummyjson";
 import type { Product } from "@/types/product";
 
-export const PRODUCTS_PAGE_SIZE = 9;
+export const PRODUCTS_PAGE_SIZE = 20;
 
 export function formatCategoryLabel(value: string) {
   if (!value) return "";
