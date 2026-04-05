@@ -3,6 +3,7 @@ import { Pagination } from "@/components/products/pagination";
 import { ProductFilters } from "@/components/products/product-filters";
 import { ProductGrid } from "@/components/products/product-grid";
 import { getProductListing } from "@/lib/api/products";
+import { error } from "console";
 
 type ProductsPageProps = {
   searchParams: Promise<{
