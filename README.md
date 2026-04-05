@@ -273,14 +273,16 @@ I ran Lighthouse against the deployed application after deployment.
 
 ### Mobile
 
-- Performance: 100
+- Performance: 95
 - Accessibility: 96
 - Best Practices: 100
 - SEO: 100
-- First Contentful Paint: 1.0s
+- First Contentful Paint: 1.1s
 - Largest Contentful Paint: 1.3s
-- Total Blocking Time: 0ms
+- Total Blocking Time: 170ms
 - Cumulative Layout Shift: 0
+
+Page size is set to 21 items per page to meet the listing requirement. On mobile this increases DOM size slightly, which accounts for the minor TBT variance on mobile Lighthouse.
 
 ## Trade-offs and Known Limitations
 

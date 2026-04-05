@@ -51,9 +51,7 @@ export default async function ProductsPage({
                 <p className="text-3xl font-semibold tracking-[-0.04em] text-[var(--foreground)]">
                   {listing?.totalItems}
                 </p>
-                <p className="mt-1 text-sm text-[var(--muted)]">
-                  Matching products
-                </p>
+                <p className="mt-1 text-sm text-[var(--muted)]">Products</p>
               </div>
               <div>
                 <p className="text-3xl font-semibold tracking-[-0.04em] text-[var(--foreground)]">
