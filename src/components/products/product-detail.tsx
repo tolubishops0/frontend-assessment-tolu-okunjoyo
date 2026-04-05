@@ -97,19 +97,6 @@ export function ProductDetail({ product, children }: ProductDetailProps) {
                 ))}
               </ul>
             </div>
-
-            {/* <div className="grid gap-4 rounded-[1.5rem] border border-[var(--border)] bg-[var(--surface-raised)] p-5 sm:grid-cols-2">
-              <InfoBlock
-                label="Availability"
-                value={product.availabilityStatus ?? "Unknown"}
-                hint="Updated from the current catalog record."
-              />
-              <InfoBlock
-                label="Category"
-                value={product.category}
-                hint="Consistent with the categories shown in the main catalog."
-              />
-            </div> */}
           </div>
         </div>
       </section>
@@ -125,26 +112,6 @@ function StatCard({ label, value }: { label: string; value: string }) {
       <p className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-[var(--foreground)]">
         {value}
       </p>
-    </div>
-  );
-}
-
-function InfoBlock({
-  label,
-  value,
-  hint,
-}: {
-  label: string;
-  value: string;
-  hint: string;
-}) {
-  return (
-    <div className="rounded-[1.25rem] bg-[var(--surface)] px-4 py-4">
-      <p className="text-sm text-[var(--muted)]">{label}</p>
-      <p className="mt-2 text-lg font-semibold text-[var(--foreground)]">
-        {value}
-      </p>
-      <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{hint}</p>
     </div>
   );
 }

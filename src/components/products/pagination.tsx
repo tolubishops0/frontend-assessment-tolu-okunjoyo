@@ -24,7 +24,7 @@ export function Pagination({
       aria-label="Pagination"
       className="flex flex-col gap-4 rounded-[1.5rem] border border-[var(--border)] bg-[var(--surface-raised)] p-4 sm:flex-row sm:items-center sm:justify-between"
     >
-      <p className="text-sm text-[var(--muted)]">
+      <p className="text-sm font-medium text-[var(--foreground)]">
         Page {currentPage} of {totalPages}
       </p>
 
@@ -42,7 +42,7 @@ export function Pagination({
           item === "ellipsis" ? (
             <span
               key={`ellipsis-${index}`}
-              className="inline-flex h-10 min-w-10 items-center justify-center px-1 text-sm font-semibold text-[var(--muted)]"
+              className="inline-flex h-10 min-w-10 items-center justify-center px-1 text-sm font-semibold text-[var(--foreground)]"
             >
               ...
             </span>
@@ -93,7 +93,7 @@ function PaginationLink({
 
   if (disabled) {
     return (
-      <span className="inline-flex h-10 items-center justify-center rounded-full border border-[var(--border)] px-4 text-sm text-[var(--muted)] opacity-50">
+      <span className="inline-flex h-10 items-center justify-center rounded-full border border-[var(--border)] px-4 text-sm text-[var(--foreground)] opacity-50">
         {children}
       </span>
     );
